@@ -1,0 +1,156 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    background-color: #181818;
+    font-family: 'Poppins', sans-serif;
+    color: #f1f1f1;
+    line-height: 1.6;
+}
+
+header {
+    text-align: center;
+    padding: 20px 40px;
+    background-color: #121212;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+h1 {
+    font-weight: 600;
+    font-size: 36px;
+    color: #3b92fc;
+    margin: 0;
+    padding-left: 3px;
+    display: inline-block;
+}
+
+/* .botones {
+    display: flex;
+    gap: 15px;
+} */
+
+button {
+    background-color: #3b92fc;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+button:hover {
+    background-color: #2a7dca;
+    transform: translateY(-2px);
+}
+
+button:active {
+    background-color: #1e6aa8;
+    transform: translateY(1px);
+}
+
+main {
+    flex: 1;
+}
+
+.div-cotizaciones {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(300px, 1fr));
+    gap: 30px 100px;
+    padding: 40px;
+    max-width: 1700px;
+    margin: 0 auto;
+    margin-top: 5%;
+}
+
+.cotizacion {
+    background-color: #1e1e1e;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.cotizacion:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+}
+
+.titulo-cotizacion {
+    font-size: 24px;
+    font-weight: 600;
+    color: #3b92fc;
+    margin-bottom: 15px;
+}
+
+.valores {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.compra, .venta {
+    font-size: 20px;
+    font-weight: 600;
+    color: #f1f1f1;
+    margin: 0;
+}
+
+.valor {
+    color: #3b92fc;
+    font-weight: 600;
+}
+
+.footer {
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    font-size: 14px;
+}
+
+.footer a {
+    color: #4dabf7;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    .div-cotizaciones {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        justify-items: center;
+    }
+
+    .cotizacion {
+        width: 100%;
+        max-width: 400px;
+    }
+
+    header {
+        flex-direction: column;
+        gap: 15px;
+        padding: 15px;
+    }
+}
+
+    /* .botones {
+        width: 100%;
+        justify-content: center;
+    } */
